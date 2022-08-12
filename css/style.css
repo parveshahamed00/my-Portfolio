@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    background-color:#100303 ;
+}
+/* emoji animation */
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 90% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+/* navbar */
+
+ .nav-link{
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #C70039 !important;
+    font-weight: 600;
+}
+.nav-link:hover{
+    color: #FAF3F3 !important;
+}
+/* about */
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image{
+    background-color: #C70039;
+    border-radius:59% 41% 50% 50% / 35% 61% 39% 65%  ;
+    padding: 5% ;
+    padding-bottom: 0;
+}
+
+.about-content-text div{
+    padding: 5%;
+    border-radius: 4%;
+        background-color:black;
+
+}
+.about-content-text div:hover  .text-ordinary{
+    color:black;
+
+}
+.about-content-text div:hover{
+background-color: #FAF3F3;
+
+}
+.text-ordinary{
+    color:darkgrey;
+    word-spacing: 7px;
+}
+.about-content-text h1{
+    font-size: 3.3em;
+    color: #C70039;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 5% 0;
+}
+.about-content-text h1 .im{
+    font-size: .5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 300;
+
+}
+/* work */
+.source-btn{
+    float: right;
+}
+#work h2{
+    margin-bottom: 5%;
+    color: #C70039;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#work .col-12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1% 0;
+}
+#work .card:hover{
+    background: transparent;
+}
+#work .card:hover h5{
+    color: #FAF3F3;
+}
+/* contact */
+footer{
+    padding:5% ;
+}
+footer h2{
+    color: #C70039;
+    text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 5%;
+
+}
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+footer i{
+    color: whitesmoke;
+    font-size: 1.8em;
+    
+}
+footer i:hover{
+    color: #C70039;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* ----------------------- */
+/* media query */
+@media only screen and (max-width: 767px) {
+ 
+  .about-content-text{
+    margin-bottom: 8%;
+  }
+
+}
