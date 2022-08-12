@@ -1,6 +1,8 @@
 
 # My Portfolio
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=#FF7139)](https://parvesh-portfolio.netlify.app/)
+
 ## 🚀 About Me
 
 Hi, I'm Parvesh Ahamed and I would like to design and develop amazing Websites.         I'm 19 and student doing BSc Information Technology. I was born and
